@@ -15,7 +15,7 @@
 <body>
 
 
-<header id="#home">
+<header id="home">
     <input type="checkbox" name="menu-toggle" id="menu-toggle" />
 <div id="nav-container">
     <div class="title-container">
@@ -81,19 +81,23 @@
     </nav>
 </div>
 
-    <img id="avatar" src="img/me.jpg" />
+</header>
+<section>
+    <div id="presentation">
+        <article id="title">
+            <img id="avatar" src="img/me.jpg" />
     <div id="intro">
         <h3>Erik Aouizerate</h3>
         <h3>développeur,</h3><h3>curieux,</h3><h3>interactif.</h3>
     </div>
-</header>
-<section>
-    <article id="about">
-        <span><h2><i class="fa fa-asterisk"></i>A propos</h2></span>
+        </article>
+        <article id="about">
+            <span><h2><i class="fa fa-asterisk"></i>A propos</h2></span>
 <p>Interessé et touche à tout, j'aime echanger et apprendre de la diversité de mon entourage.</p>
 <p>Je développe actuellement une serie de projets personnels dans le but d'offrir de nouvelles expériences utilisateurs. J'explore les technologies qui m'interessent en alliant curiosité et interêts professionnels</p>
 <p>Mon état d'esprit du moment : dissociation du travail de la rémunération - ou - comment garantir le plaisir au travail.</p>
-    </article>
+        </article>
+    </div>
     <article id="projects">
         <h2><i class="fa fa-paper-plane"></i>Projets</h2>
 
@@ -124,12 +128,119 @@
 					<p>J&rsquo;ai imaginé un CV interactif permettant à mes futurs collaborateurs de parcourir et de visualiser mes connaissances de manière simple et concise.<br />
 Pour cela, l&rsquo;information peut être filtrée de manière chronologique et thématique.</p>
 
-<p>Trois outils sont à votre disposition :<br />
-- Vous pouvez explorer mes compétences grace a mon <a href="https://mejjjor.github.io/dataGraphExample/">CV interactif</a><br />
-- Vous pouvez créer votre propre CV interactif grâce au <a href="https://mejjjor.github.io/dataGraphExample/editor.html">data-graph editor</a><br />
-- Vous pouvez visualiser votre création grâce au <a href="https://mejjjor.github.io/dataGraphExample/visualisator.html">data-graph visualisator</a></p>
+<p>Trois outils sont à votre disposition :</p>
+
+<ul>
+<li>Vous pouvez explorer mes compétences grace a mon <a href="https://mejjjor.github.io/dataGraphExample/">CV interactif</a><br /></li>
+<li>Vous pouvez créer votre propre CV interactif grâce au <a href="https://mejjjor.github.io/dataGraphExample/editor.html">data-graph editor</a><br /></li>
+<li>Vous pouvez visualiser votre création grâce au <a href="https://mejjjor.github.io/dataGraphExample/visualisator.html">data-graph visualisator</a></li>
+</ul>
 
 <p>Le code source est disponible sur <a href="https://github.com/mejjjor/dataGraph">GitHub</a>.</p>
+
+			</div>
+		</div>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		<h3><i class="fa fa-arrow-right"></i>MeetMusic
+		<a href="dataGraphExample/filters/dataGraph.html" target="_blank"><i class="fa fa-share-alt iconCV"></i></a></h3>
+		
+		<div class="project-content">
+			<div class="project-image-container">
+				<div class="project-image">
+				
+					<div>
+						<img class="project" src="img/projects/meetMusic.png"/>
+					</div>
+				
+					<div>
+						<img class="project" src="img/projects/meetMusic_2.png"/>
+					</div>
+				
+					<div>
+						<img class="project" src="img/projects/meetMusic_3.png"/>
+					</div>
+				
+				</div>
+			</div>
+			<div>
+			<h5><i class="fa fa-quote-left"></i>Créer et utiliser une playlist musicale collaborative et décentralisée.<i class="fa fa-quote-right"></i></h5>
+					<p><a href="http://erik-aouizerate.me/meetMusic/">MeetMusic</a> est une playlist collaborative afin que chacun puisse facilement et via n&rsquo;importe quel terminal connecté ajouter ou enlever une musique.</p>
+
+<p>Le cas d&rsquo;utilisation est le suivant :</p>
+
+<ul>
+<li>Un terminal est le owner de la playlist, c&rsquo;est lui qui diffusera le son et aura certain privilège</li>
+<li>Les autres terminaux sont des contributeurs et peuvent modifier la playlist</li>
+</ul>
+
+<p>La simplicité d&rsquo;utilisation étant au coeur de mes préocupation, il suffit de partager l&rsquo;url de la playlist (à l&rsquo;oral ou via le QRcode) pour y accéder et la modifier.</p>
+
+<p>On peut ajouter des musiques de youtube ou directement des fichiers mp3 stockés sur le terminal (pc ou téléphone par exemple).</p>
+
+<p>Le transfert s&rsquo;effectue en peer-to-peer via la technologie webRTC.
+Cette technologie présente les avantages suivants :</p>
+
+<ul>
+<li>Respect de la confidentialité des données, toutes les informations sont stockés chez les utilisateurs</li>
+<li>Pas besoin de mettre en place un backend, donc réduction des coûts et de la maintenance<br /></li>
+<li>Affranchissement des problèmes liés aux licences des fichiers mp3 car il ne sont jamais stockés sur un serveur</li>
+</ul>
+
+<p>Ce projet possède plusieurs limitations :</p>
+
+<ul>
+<li>La technologie est jeune et n&rsquo;est pas completement implémenté dans les navigateurs (Safari par exemple)</li>
+<li>Il semblerait que les opérateurs téléphoniques n&rsquo;autorisent pas encore ce type de connection sur les reseaux mobiles (3G ou 4G)</li>
+<li>S&rsquo;il n&rsquo;y a plus de serveur faisant office d&rsquo;autorité centrale, comment assuré l&rsquo;identité des utilisteurs et surtout du proprietaire de la playlist</li>
+</ul>
+
+<p>Pour ce dernier point, il serait possible d&rsquo;utiliser la technologie blockchain qui assure l&rsquo;intégrité et l&rsquo;immutabilité d&rsquo;une information. Je vous renvoi au livre traitant du bitcoin (le bitcoin est construit sur une blockchain) et au reseau ethereum qui permet d&rsquo;implémenter ce type d&rsquo;infrastructure.</p>
+
+			</div>
+		</div>
+	
+
+	
+
+	
+		<h3><i class="fa fa-arrow-right"></i>Sites vitrines
+		<a href="dataGraphExample/filters/dataGraph.html" target="_blank"><i class="fa fa-share-alt iconCV"></i></a></h3>
+		
+		<div class="project-content">
+			<div class="project-image-container">
+				<div class="project-image">
+				
+					<div>
+						<img class="project" src="img/projects/vitrine_erik.png"/>
+					</div>
+				
+					<div>
+						<img class="project" src="img/projects/vitrine_mano.png"/>
+					</div>
+				
+				</div>
+			</div>
+			<div>
+			<h5><i class="fa fa-quote-left"></i>Créer un site vitrine facilement administrable par l&#39;utilisateur.<i class="fa fa-quote-right"></i></h5>
+					<p>J&rsquo;ai utilisé le générateur de site statique <a href="https://gohugo.io/">hugo</a> afin de créer des sites vitrines.</p>
+
+<p>Ces sites peuvent être hébergés gratuitement sur différentes plateformes car il ne necessite pas de backend. De plus, la sécurité y est accru dû à la simplicité du systeme.</p>
+
+<p>J&rsquo;ai donc réalisé mon <a href="http://erik-aouizerate.me">site personnel</a> ainsi que le site d&rsquo;un ami travaillant dans les arts et spectacles : <a href="http://www.manoel-artiste.fr">Manoël Mathis</a>.</p>
+
+<p>Cette technologie étant plutôt reservé à des developpeurs, j&rsquo;ai donc aussi fait une documentation afin de faciliter son utilisation : <a href="http://erik-aouizerate.me/docs/mano/">docs</a>.</p>
 
 			</div>
 		</div>
@@ -153,22 +264,10 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 
 	
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
     </article>
     <div>
-            <article id="experiences">
-                	<h2><i class="fa fa-suitcase"></i>Expériences</h2>
+        <article id="experiences">
+            	<h2><i class="fa fa-suitcase"></i>Expériences</h2>
 	<div class="flex-container">
 		
 			
@@ -186,13 +285,15 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 <li>Mise en place des contraintes d&rsquo;intégrités du système</li>
 <li>Implémentation des jeux de tests</li>
 <li>Redaction des rapports de recherche : <a href="./documents/CIR_EA3EA2">rapport 1</a> / <a href="./documents/CIR_EA3">rapport 2</a></li>
+<li>Technologies utilisées : java 8, git</li>
 </ul></li>
 <li>Développement du SI interne
 
 <ul>
 <li>Réalisation du module de gestion de la planification des interventions</li>
-<li>Amélioration de la qualit du code à l&rsquo;aide de <a href="http://www.sonarqube.org/">sonar</a></li>
+<li>Amélioration de la qualité du code à l&rsquo;aide de <a href="http://www.sonarqube.org/">sonar</a></li>
 <li>Colaboration, échange et entraide avec les autre équipes</li>
+<li>Technologies utilisées : java 5, jsf 2, ejb3, svn, jira</li>
 </ul></li>
 </ul>
 
@@ -218,8 +319,9 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 <ul>
 <li>Conception et force de proposition pour répondre aux besoins du client</li>
 <li>Création d&rsquo;une application de test appliquée au moteur générique</li>
-<li>Réalisation d&rsquo;une interface web ergonomique en AngularJS pour les utilisateurs</li>
+<li>Réalisation d&rsquo;une interface web ergonomique pour les utilisateurs</li>
 <li>Optimisation du code pour répondre aux contraintes de performance</li>
+<li>Technologies utilisées : javascript, angularJS, PLsql, svn</li>
 </ul></li>
 <li>Suivi de projet
 
@@ -256,8 +358,12 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 		
 			
 		
+			
+		
+			
+		
 	</div>	
-            </article>
+        </article>
         <div id="bottom-content">
             <article id="skills">
                 <h2><i class="fa fa-flask"></i>Compétences</h2>
@@ -282,7 +388,7 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
         </div>
         <div class="progress-bar"><span style="width: 70%"></span></div>
     </div>
-      
+        
     <div class="skill">
         <div class="flex-container">
             <h4><img src=img/skills/angular-icon.svg>
@@ -292,7 +398,7 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
         </div>
         <div class="progress-bar"><span style="width: 75%"></span></div>
     </div>
-      
+        
     <div class="skill">
         <div class="flex-container">
             <h4><img src=img/skills/java.svg>
@@ -445,6 +551,10 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 
 	
 
+	
+
+	
+
 </table>
 
                 </article>
@@ -463,6 +573,7 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
         </div>
     </div>
 </section>
+
 
 <footer>
     2015 - Erik Aouizerate - Powered by Hugo
@@ -483,7 +594,6 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 
 ga('create', 'UA-74349110-1', 'auto');
 ga('send', 'pageview');
-
 </script>
 
 </html>
