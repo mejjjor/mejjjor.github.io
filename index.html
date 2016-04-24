@@ -94,8 +94,8 @@
         <article id="about">
             <span><h2><i class="fa fa-asterisk"></i>A propos</h2></span>
 <p>Interessé et touche à tout, j'aime echanger et apprendre de la diversité de mon entourage.</p>
-<p>Je développe actuellement une serie de projets personnels dans le but d'offrir de nouvelles expériences utilisateurs. J'explore les technologies qui m'interessent en alliant curiosité et interêts professionnels</p>
-<p>Mon état d'esprit du moment : dissociation du travail de la rémunération - ou - comment garantir le plaisir au travail.</p>
+<p>Je développe actuellement une serie de projets personnels dans le but d'offrir de nouvelles expériences utilisateurs. J'explore les technologies qui m'interessent en alliant curiosité et interêts professionnels.</p>
+<p>Je cherche avant tout à apporter du sens à mon travail; mon état d'esprit du moment: responsabilité citoyenne, éthique et nouvelle forme de travail.</p>
         </article>
     </div>
     <article id="projects">
@@ -181,32 +181,21 @@ Pour cela, l&rsquo;information peut être filtrée de manière chronologique et 
 <p>Le cas d&rsquo;utilisation est le suivant :</p>
 
 <ul>
-<li>Un terminal est le owner de la playlist, c&rsquo;est lui qui diffusera le son et aura certain privilège</li>
+<li>Un terminal est le owner de la playlist, c&rsquo;est lui qui diffusera le son et aura certains privilèges</li>
 <li>Les autres terminaux sont des contributeurs et peuvent modifier la playlist</li>
 </ul>
 
-<p>La simplicité d&rsquo;utilisation étant au coeur de mes préocupation, il suffit de partager l&rsquo;url de la playlist (à l&rsquo;oral ou via le QRcode) pour y accéder et la modifier.</p>
+<p>Afin de simplifier l&rsquo;utilisation de cette application, il suffit de partager l&rsquo;url de la playlist pour y accéder et la modifier.<br />
+On peut ajouter des musiques de youtube ou directement des fichiers mp3 stockés sur le terminal (pc ou téléphone par exemple).</p>
 
-<p>On peut ajouter des musiques de youtube ou directement des fichiers mp3 stockés sur le terminal (pc ou téléphone par exemple).</p>
-
-<p>Le transfert s&rsquo;effectue en peer-to-peer via la technologie webRTC.
-Cette technologie présente les avantages suivants :</p>
-
-<ul>
-<li>Respect de la confidentialité des données, toutes les informations sont stockés chez les utilisateurs</li>
-<li>Pas besoin de mettre en place un backend, donc réduction des coûts et de la maintenance<br /></li>
-<li>Affranchissement des problèmes liés aux licences des fichiers mp3 car il ne sont jamais stockés sur un serveur</li>
-</ul>
-
-<p>Ce projet possède plusieurs limitations :</p>
+<p>Le transfert s&rsquo;effectue en peer-to-peer via la technologie <a href="https://webrtc.org/">webRTC</a>.<br />
+Ce projet présente quelques limitations :</p>
 
 <ul>
 <li>La technologie est jeune et n&rsquo;est pas completement implémenté dans les navigateurs (Safari par exemple)</li>
-<li>Il semblerait que les opérateurs téléphoniques n&rsquo;autorisent pas encore ce type de connection sur les reseaux mobiles (3G ou 4G)</li>
-<li>S&rsquo;il n&rsquo;y a plus de serveur faisant office d&rsquo;autorité centrale, comment assuré l&rsquo;identité des utilisteurs et surtout du proprietaire de la playlist</li>
+<li>Il semblerait que les opérateurs téléphoniques n&rsquo;autorisent pas encore ce type de connexion sur les réseaux mobiles (3G ou 4G)</li>
+<li>L&rsquo;absence de serveur faisant office d&rsquo;autorité centrale oblige à utilisé la technologie <a href="https://bitcoin.org/bitcoin.pdf">bitcoin / blockchain</a> et notamment <a href="https://www.ethereum.org/">ethereum</a> pour garantir l&rsquo;identité du proprietaire de la playlist</li>
 </ul>
-
-<p>Pour ce dernier point, il serait possible d&rsquo;utiliser la technologie blockchain qui assure l&rsquo;intégrité et l&rsquo;immutabilité d&rsquo;une information. Je vous renvoi au livre traitant du bitcoin (le bitcoin est construit sur une blockchain) et au reseau ethereum qui permet d&rsquo;implémenter ce type d&rsquo;infrastructure.</p>
 
 			</div>
 		</div>
@@ -236,7 +225,7 @@ Cette technologie présente les avantages suivants :</p>
 			<h5><i class="fa fa-quote-left"></i>Créer un site vitrine facilement administrable par l&#39;utilisateur.<i class="fa fa-quote-right"></i></h5>
 					<p>J&rsquo;ai utilisé le générateur de site statique <a href="https://gohugo.io/">hugo</a> afin de créer des sites vitrines.</p>
 
-<p>Ces sites peuvent être hébergés gratuitement sur différentes plateformes car il ne necessite pas de backend. De plus, la sécurité y est accru dû à la simplicité du systeme.</p>
+<p>Ces sites peuvent être hébergés gratuitement sur différentes plateformes car il ne necessite pas de backend. De plus, la sécurité y est accru dû à la simplicité du système.</p>
 
 <p>J&rsquo;ai donc réalisé mon <a href="http://erik-aouizerate.me">site personnel</a> ainsi que le site d&rsquo;un ami travaillant dans les arts et spectacles : <a href="http://www.manoel-artiste.fr">Manoël Mathis</a>.</p>
 
@@ -576,9 +565,12 @@ Cette technologie présente les avantages suivants :</p>
 
 
 <footer>
-    2015 - Erik Aouizerate - Powered by Hugo
+    2015 - Erik Aouizerate - Powered by <a href="https://gohugo.io/">Hugo</a>
 </footer>
-</body>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 <script>
 (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
